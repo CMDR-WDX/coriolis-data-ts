@@ -21,3 +21,5 @@ export default interface FrameshiftDriveModule extends GenericModule {
      */
     maxFuelPerJump: number
 }
+
+export type ValidFsdModuleRating = "A" | "B" | "C" | "D" | "E"

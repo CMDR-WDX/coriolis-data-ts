@@ -1,5 +1,5 @@
 import { i18nData } from "../i18n";
-import FrameshiftDriveModule from "../types";
+import FrameshiftDriveModule, { ValidFsdModuleRating } from "../types";
 import { FSD_EDDB_ID_OFFSET, FSD_ED_ID_OFFSET, makeCoriolisId } from "./helper";
 
 
@@ -105,3 +105,8 @@ export const E: FrameshiftDriveModule = {
         eddb: FSD_EDDB_ID_OFFSET+idStart+0
     }
 }
+
+const grouped: Record<ValidFsdModuleRating, FrameshiftDriveModule> = {
+    A, B, C, D, E
+}
+export default grouped
