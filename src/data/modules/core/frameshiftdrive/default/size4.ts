@@ -1,6 +1,6 @@
 import { i18nData } from "../i18n";
 import FrameshiftDriveModule from "../types";
-import { FSD_EDDB_ID_OFFSET, FSD_ED_ID_OFFSET } from "./helper";
+import { FSD_EDDB_ID_OFFSET, FSD_ED_ID_OFFSET, makeCoriolisId } from "./helper";
 
 
 const moduleSize = 4;
@@ -20,7 +20,7 @@ export const A: FrameshiftDriveModule = {
     i18n: i18nData,
     ids: {
         symbol: `Int_Hyperdrive_Size${moduleSize}_Class5`,
-        coriolis: "F"+(idStart+0),
+        coriolis: makeCoriolisId(idStart+0),
         ed: FSD_ED_ID_OFFSET+idStart+4,
         eddb: FSD_EDDB_ID_OFFSET+idStart+4
     }
@@ -40,7 +40,7 @@ export const B: FrameshiftDriveModule = {
     i18n: i18nData,
     ids: {
         symbol: `Int_Hyperdrive_Size${moduleSize}_Class4`,
-        coriolis: "F"+(idStart+1),
+        coriolis: makeCoriolisId(idStart+1),
         ed: FSD_ED_ID_OFFSET+idStart+3,
         eddb: FSD_EDDB_ID_OFFSET+idStart+3
     }
@@ -60,7 +60,7 @@ export const C: FrameshiftDriveModule = {
     i18n: i18nData,
     ids: {
         symbol: `Int_Hyperdrive_Size${moduleSize}_Class3`,
-        coriolis: "F"+(idStart+2),
+        coriolis: makeCoriolisId(idStart+2),
         ed: FSD_ED_ID_OFFSET+idStart+2,
         eddb: FSD_EDDB_ID_OFFSET+idStart+2
     }
@@ -80,7 +80,7 @@ export const D: FrameshiftDriveModule = {
     i18n: i18nData,
     ids: {
         symbol: `Int_Hyperdrive_Size${moduleSize}_Class2`,
-        coriolis: "F"+(idStart+3),
+        coriolis: makeCoriolisId(idStart+3),
         ed: FSD_ED_ID_OFFSET+idStart+1,
         eddb: FSD_EDDB_ID_OFFSET+idStart+1
     }
@@ -100,7 +100,7 @@ export const E: FrameshiftDriveModule = {
     i18n: i18nData,
     ids: {
         symbol: `Int_Hyperdrive_Size${moduleSize}_Class1`,
-        coriolis: "F"+(idStart+4),
+        coriolis: makeCoriolisId(idStart+4),
         ed: FSD_ED_ID_OFFSET+idStart+0,
         eddb: FSD_EDDB_ID_OFFSET+idStart+0
     }
