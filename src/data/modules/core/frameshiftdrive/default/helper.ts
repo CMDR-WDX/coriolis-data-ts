@@ -1,0 +1,2 @@
+export const FSD_ED_ID_OFFSET = 128064103
+export const FSD_EDDB_ID_OFFSET = 961
